@@ -45,7 +45,7 @@ std::vector<std::string> BuildSequences(int n)
 void PrintSequences(std::vector<std::string> sequences)
 {
 	std::cout << '[';
-	for (auto& seq : sequences) {
+	for (const auto& seq : sequences) {
 		std::cout << '"' << seq << '"';
 		if (&seq != &sequences.back())
 			std::cout << ", ";
